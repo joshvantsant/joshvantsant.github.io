@@ -1,6 +1,6 @@
 ---
 title: "Robotic Manipulators"
-excerpt: "Examples of work on robotic manipulators 1<br/><img src='/images/500x300.png'>"
+excerpt: "Examples of work on robotic manipulators 1<br/><img src='/images/RoboCup.jpg'>"
 collection: portfolio
 ---
 
