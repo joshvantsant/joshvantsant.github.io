@@ -2,7 +2,7 @@
 title: "Compliant Mechanism Design — Watch Chronograph"
 excerpt: "Master thesis research with Flexous Mechanisms on topology-optimised 
 compliant mechanisms for precision horology. 
-<br/><img src='/images/flexous-mechanism.jpg'>"
+<br/><img src='/images/Flexous.png'>"
 collection: portfolio
 ---
 
