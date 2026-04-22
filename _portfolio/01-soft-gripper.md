@@ -1,7 +1,7 @@
-markdown---
+---
 title: "Soft Robotic Gripper"
 excerpt: "SMA-actuated soft gripper with micro-hook variant, developed at the 
-BioMorphic Intelligence Lab, TU Delft.<br/><img src='/images/soft-gripper.jpg'>"
+BioMorphic Intelligence Lab, TU Delft.<br/><img src='/images/SMA_overview.jpg'>"
 collection: portfolio
 ---
 
@@ -15,10 +15,10 @@ contributing to the design and development of a shape memory alloy (SMA) actuate
 spans a full development from initial CAD design through to fabrication and practical testing of functional prototypes in vacuum and thermal chambers.
 
 ### Initial Space Gripper
-The space gripper is fabricated from silicon and designed for conforming around a 1U - 2U sized object. It is integrated with some touch sensors and touch whisker for basic control strategy with the SMAs. This work is ongoing
+The space gripper is fabricated from silicon and designed for conforming around a 1U - 2U sized object. It is integrated with some touch sensors and touch whisker for basic control strategy with an arduino nano. This work is ongoing
 with planned publication of further details later in 2026.
 
-![Space gripper in operation](/images/soft-gripper-action.jpg)
+![Space gripper in operation](/images/SMA_detail.jpg)
 
 ### Micro-Hook Variant
 Concurrent to the robotic space gripper, I have independently designed an alternative gripper for interplanetary rock sampling. The gripper uses a similar actuation
