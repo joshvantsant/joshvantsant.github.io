@@ -26,6 +26,8 @@ flexible members rather than traditional rigid joints and bearings. This makes
 them ideal for precision instruments where backlash, friction, and lubrication 
 are critical concerns.
 
+![Compliant mechanism of the oscillator](/images/Flexous.png)
+
 ### My Work
 The project followed a complete engineering workflow:
 
@@ -41,7 +43,9 @@ The project followed a complete engineering workflow:
 ### Relevant Patent Work
 Flexous holds patents in compliant mechanism design for horology, some of which 
 relate to the foundational design space explored in this thesis. Selected 
-published patent work can be found via [Espacenet](https://worldwide.espacenet.com).
+published patent work can be found via [Espacenet](https://worldwide.espacenet.com) with one also shown below.
+
+![Existing patent for Flexous](/images/Patent.png)
 
 ### Skills Developed
 `SolidWorks` · `ANSYS APDL` · `Topology Optimisation` · `Compliant Mechanism 
