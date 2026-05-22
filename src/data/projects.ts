@@ -212,28 +212,50 @@ A custom PCB was designed and fabricated to integrate the sensors, actuators, an
     ],
   },
 
-  // ── 6. MASTER DESIGN PROJECT ─────────────────────────────────────────────────
+  // ── 6. MASTER BIOMECHATRONICS DESIGN PROJECT ─────────────────────────────────────────────────
   {
     id: '6',
-    title: 'Master Design Project',
-    category: 'master project',
-    year: 'Master',
-    slug: 'master-design-project',
-    // TODO: Replace with an actual project photo
-    coverImage: '/images/design-project-cover.jpg',
+    title: 'BioMechatronics Design Project',
+    category: 'Biomechatronics / Medical Device Design',
+    year: 'TU Delft MSc',
+    slug: 'master-design-project-biomechatronics',
+    
+    coverImage: '/images/Lower_Limb_design/CAD_Model.jpg',
+    
     location: 'Delft, Netherlands',
+    
     skills: [
-      // TODO: Add skills relevant to your design project(s)
-      'Placeholder skill A',
-      'Placeholder skill B',
-      'Placeholder skill C',
+      'Medical Device Prototyping',
+      'SolidWorks',
+      'Concept Design Generation',
     ],
-    description: `TODO: Add your master design project description here. If you have multiple design courses or projects to group here, describe the overall theme, the individual briefs, methods used (ideation, prototyping, user testing), and key outcomes.`,
+    description: `This master’s-level BioMechatronics project explored assistive solutions for toddlers with lower-limb gait deficiencies during early walking development. Working in a team of two, we investigated how sensory feedback systems could support balance, coordination, and gait learning in young prosthesis users.
+Following an initial research phase into developmental gait challenges and existing prosthetic limitations, three conceptual solutions were generated and evaluated through a structured concept selection process. 
+
+The final concept proposed a wearable insole system incorporating pressure sensors, Bluetooth communication, and vibration feedback to provide real-time haptic cues during walking. My primary contribution focused on the CAD development of the final concept using SolidWorks, alongside collaborative concept generation and system development throughout the project.`,
     images: [
       {
         id: '6-1',
-        src: '/images/design-project-cover.jpg',
-        alt: 'Master design project prototype',
+        src: '/images/Lower_Limb_design/CAD_Model.jpg',
+        alt: 'CAD model of BioMechatronics Design Project',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '6-2',
+        src: '/images/Lower_Limb_design/Concept1.jpg',
+        alt: 'Example of different concepts explored during BioMechatronics Design Project',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '6-3',
+        src: '/images/Lower_Limb_design/concept2_true.JPEG',
+        alt: 'Example of different concepts explored during BioMechatronics Design Project',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '6-4',
+        src: '/images/Lower_Limb_design/concept3-2.JPG',
+        alt: 'Example of different concepts explored during BioMechatronics Design Project',
         aspectRatio: 'landscape',
       },
     ],
