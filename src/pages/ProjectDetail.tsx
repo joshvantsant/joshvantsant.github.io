@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { getProjectBySlug } from '@/data/projects';
-import { SEOHead } from '@/components/SEOHead';
-import { ScrollReveal } from '@/components/ScrollReveal';
-import { Lightbox } from '@/components/Lightbox';
+import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { SEOHead } from '@/components/seo/SEOHead';
+import { Lightbox } from '@/components/portfolio/Lightbox';
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
