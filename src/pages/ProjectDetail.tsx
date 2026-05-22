@@ -11,6 +11,21 @@ export default function ProjectDetail() {
 
   const galleryLayout = project.galleryLayout || 'stacked';
 
+  // ── IMAGE SIZE SYSTEM ─────────────────────────────
+  const imageSizeClass = (size?: 'small' | 'medium' | 'large') => {
+    switch (size) {
+      case 'small':
+        return 'max-w-md mx-auto';
+      case 'large':
+        return 'max-w-6xl mx-auto';
+      case 'medium':
+      default:
+        return 'max-w-4xl mx-auto';
+    }
+  };
+
+  const images = project.images ?? [];
+
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
