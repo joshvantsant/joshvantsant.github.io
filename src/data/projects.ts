@@ -235,12 +235,6 @@ Following an initial research phase into developmental gait challenges and exist
 The final concept proposed a wearable insole system incorporating pressure sensors, Bluetooth communication, and vibration feedback to provide real-time haptic cues during walking. My primary contribution focused on the CAD development of the final concept using SolidWorks, alongside collaborative concept generation and system development throughout the project.`,
     images: [
       {
-        id: '6-1',
-        src: '/images/Lower_Limb_design/CAD_Model.jpg',
-        alt: 'CAD model of BioMechatronics Design Project',
-        aspectRatio: 'landscape',
-      },
-      {
         id: '6-2',
         src: '/images/Lower_Limb_design/Concept1.jpg',
         alt: 'Example of different concepts explored during BioMechatronics Design Project',
