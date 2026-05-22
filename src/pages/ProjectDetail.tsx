@@ -1,3 +1,12 @@
+import { useParams, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
+import { getProjectBySlug } from '@/data/projects';
+import { SEOHead } from '@/components/SEOHead';
+import { ScrollReveal } from '@/components/ScrollReveal';
+import { Lightbox } from '@/components/Lightbox';
+
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
