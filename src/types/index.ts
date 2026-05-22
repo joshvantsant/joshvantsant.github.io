@@ -3,7 +3,13 @@
  * Based on SPECIFICATION.md data model requirements
  */
 
-export type ProjectCategory = 'portraits' | 'landscapes' | 'editorial' | 'architecture' | 'documentary';
+export type ProjectCategory =
+  | 'Master thesis'
+  | 'internship'
+  | 'student project'
+  | 'research project'
+  | 'master project'
+  | 'Biomechatronics / Medical Device Design'; 
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
@@ -13,6 +19,7 @@ export interface ProjectImage {
   alt: string;
   aspectRatio: AspectRatio;
   caption?: string;
+  size?: 'small' | 'medium' | 'large'; // ✅ add this line
 }
 
 export interface Project {
@@ -27,6 +34,13 @@ export interface Project {
   camera?: string;
   location?: string;
   slug: string;
+  skills?: string[];        // ✅ add this
+  notes?: string;           // ✅ add this
+  link?: {                  // ✅ add this
+    label: string;
+    url: string;
+  };
+  galleryLayout?: 'stacked' | 'grid'; // ✅ add this (used in ProjectDetail)
 }
 
 export interface PhotographerInfo {
