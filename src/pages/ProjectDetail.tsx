@@ -24,8 +24,6 @@ export default function ProjectDetail() {
     }
   };
 
-  const images = project.images ?? [];
-
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
@@ -135,7 +133,7 @@ export default function ProjectDetail() {
                 <ScrollReveal key={image.id} delay={index * 0.1}>
                   <div
                     className={cn(
-                      'max-w-5xl mx-auto px-6 lg:px-8 cursor-pointer',
+                      'px-6 lg:px-8 cursor-pointer',
                       imageSizeClass(image.size)
                     )}
                     onClick={() => openLightbox(index)}
