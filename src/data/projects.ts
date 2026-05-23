@@ -159,24 +159,33 @@ A custom PCB was designed and fabricated to integrate the sensors, actuators, an
     year: 'Master',
     slug: 'soft-space-gripper',
     // TODO: Replace with an actual project photo
-    coverImage: '/images/soft-gripper-cover.jpg',
+    coverImage: '/images/BioMorphicLab/SMA_overview.jpg',
     client: 'TU Delft',
     location: 'Delft, Netherlands',
     skills: [
       'Soft robotics',
       'Silicone moulding',
-      'Pneumatic actuation',
+      'Smart material actuation',
       'Finite element analysis',
       'Space mechanism design',
       'Prototype testing',
     ],
-    description: `TODO: Add your project description here. Describe the problem (grasping in space / microgravity), your approach to the soft gripper design, materials and fabrication methods used, and how the gripper was tested or validated.`,
+    description: `Supervised by Prof. Salua Hamaza and Dr. Fernando Ruiz Vinceria, I am currently contributing to the development of bio-inspired robotic systems for future space applications at the BioMorphic Intelligence Lab. My work focuses on shape memory alloy (SMA) actuated soft robotic grippers designed for lightweight, adaptable, and compliant interaction in extraterrestrial environments.
+Current research investigates the performance of SMA actuation and heat dissipation behaviour under vacuum conditions, with ongoing work contributing toward multiple research publications. This includes the design, fabrication, and experimental testing of functional prototypes within vacuum and thermal chamber environments to better understand actuation efficiency and thermal response in space-like conditions.
+Alongside this research, I am independently leading the development of a soft robotic rock gripper for interplanetary sampling applications, for which I will be first author on the resulting publication. The gripper incorporates integrated micro-hook structures within a compliant 3D printed architecture, enabling secure and adaptive grasping across irregular rock geometries while maintaining a lightweight and mechanically simple design.
+This project has provided extensive experience across the full research and development pipeline, including CAD design, iterative prototyping, experimental validation, vacuum testing, and the integration of compliant actuation systems for extreme environments.`,
     images: [
       {
         id: '4-1',
         // TODO: Replace with real project image
-        src: '/images/soft-gripper-cover.jpg',
-        alt: 'Soft robotic gripper prototype',
+        src: '/images/BioMorphicLab/SMA_detail.jpg',
+        alt: 'Phase shift of the shape memory alloy',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '4-2',
+        src: '/images/BioMorphicLab/space_gripper.png',
+        alt: 'Solidworkd CAD render of gripper',
         aspectRatio: 'landscape',
       },
     ],
