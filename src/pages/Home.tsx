@@ -55,7 +55,7 @@ const highlights: Highlight[] = [
     date: "Sep '24",
   },
   {
-    src: '/images/SMA_overview.jpg',
+    src: '/images/BioMorphicLab/SMA_overview.jpg',
     title: 'Soft Robotic Research',
     detail: 'Post graduate research into interplanetary soft robotic grippers at the BioMorphic Intelligence Lab',
     date: "'25 - '26",
