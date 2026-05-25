@@ -13,7 +13,7 @@ export default function Portfolio() {
     <>
       <SEOHead
         title="Projects"
-        description="Engineering and research projects spanning mechanical design, robotics, compliant mechanisms, soft robotics, and fabrication."
+        description="Engineering and research projects spanning mechanical design, soft robotics, compliant mechanisms, medical devices, and prototyping."
       />
 
       <div className="min-h-screen">
@@ -31,7 +31,7 @@ export default function Portfolio() {
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide max-w-2xl mx-auto">
                 A collection of engineering and research work spanning academic
-                study, industry internships, and independent projects.
+                study, industry work, and independent projects.
               </p>
             </motion.div>
           </div>
