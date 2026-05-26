@@ -263,9 +263,7 @@ The final concept proposed a wearable insole system incorporating pressure senso
       },
     ],
   },
-
-];
-
+  
   // ── 3. ROBOCUP ───────────────────────────────────────────────────────────────
   {
     id: '3',
@@ -344,6 +342,7 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
         src: '/images/Uniweld/muffler_system.jpeg',
         alt: 'Finished custom exhaust muffler system',
         aspectRatio: 'portrait',
+        size: 'medium',
       },
       {
         id: '2-2',
@@ -356,16 +355,18 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
         src: '/images/Uniweld/spot_welding.jpg',
         alt: 'Spot welding wire racking components',
         aspectRatio: 'square',
+        size: 'medium',
       },
       {
         id: '2-4',
         src: '/images/Uniweld/wire_bending.jpg',
         alt: 'Finished wire bend product',
         aspectRatio: 'portrait',
+        size: 'medium',
       },
     ],
   },
-
+];
 // ─── HELPER FUNCTIONS ─────────────────────────────────────────────────────────
 
 export const getProjectBySlug = (slug: string): Project | undefined =>
