@@ -366,6 +366,65 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
       },
     ],
   },
+
+  // ── HBDHB Project Management Work ────────────────────────────
+  {
+    id: '8',
+    title: 'Healthcare Infrastructure & Hospital Upgrades',
+    category: 'industry',
+    year: '2020–2022',
+    slug: 'hawkes-bay-healthcare-project-management',
+    coverImage: '/images/HBDHB/helicopter.jpeg',
+    client: 'Health New Zealand | Te Whatu Ora Te Matau a Māui',
+    location: 'Hastings, New Zealand',
+  
+    skills: [
+      'Project management',
+      'Construction coordination',
+      'Stakeholder communication',
+      'Contractor coordination',
+      'Quality control',
+      'Risk management',
+      'Interdisciplinary collaboration',
+    ],
+  
+    description: `I initially joined the Hawke’s Bay Hospital as an engineering consultant before transitioning into a full-time project manager within the hospital engineering facilities and operations team. The role involved coordinating and delivering a wide range of hospital infrastructure, maintenance, and upgrade projects while ensuring minimal disruption to critical healthcare operations. This included working closely with contractors, hospital staff, engineers, and external stakeholders to manage project timelines, oversee quality control, and coordinate construction activities within live clinical environments.
+    
+    A major highlight of the role was contributing to the national COVID-19 response through the development and upgrading of hospital rehabilitation and treatment spaces during the pandemic. Additional projects included large-scale mechanical and building infrastructure upgrades, pipework replacements, asbestos remediation coordination, and facility improvement works across the hospital campus.The position provided extensive experience working within highly regulated operational environments where safety, communication, logistics, and coordination were critical to successful project delivery.`,
+  
+    images: [
+      {
+        id: '8-1',
+        src: '/images/HBDHB/helicopter.jpeg',
+        alt: 'Helicopter lifting equipment during hospital infrastructure works',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '8-2',
+        src: '/images/HBDHB/Pipework.jpeg',
+        alt: 'Example of new pipework installation',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '8-3',
+        src: '/images/HBDHB/men.jpeg',
+        alt: 'Example of some renovation works',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '8-4',
+        src: '/images/HBDHB/Stairwell.jpeg',
+        alt: 'Overall of new stairwell installation',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '8-5',
+        src: '/images/HBDHB/Stairwell_weld.jpeg',
+        alt: 'Close-up of ',
+        aspectRatio: 'landscape',
+      },
+    ],
+  },
 ];
 // ─── HELPER FUNCTIONS ─────────────────────────────────────────────────────────
 
