@@ -420,7 +420,66 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
       {
         id: '8-5',
         src: '/images/HBDHB/Stairwell_weld.jpeg',
-        alt: 'Close-up of ',
+        alt: 'Close-up of welding for stairwell',
+        aspectRatio: 'landscape',
+      },
+    ],
+  },
+
+  // ── HBDHB Project Management Work ────────────────────────────
+  {
+    id: '9',
+    title: 'Mechanical Engineering Consultant at BVT',
+    category: 'industry',
+    year: '2018–2020',
+    slug: 'bvt-mechanical-engineering',
+    coverImage: '/images/BVT/Construction.jpeg',
+    client: 'BVT Engineering',
+    location: 'Christchurch, New Zealand',
+  
+    skills: [
+      'Mechanical Design',
+      'Finite Element Anlysis',
+      'Construction monitoring',
+      'Stakeholder communication',
+      'Interdisciplinary collaboration',
+    ],
+  
+    description: `I began my professional engineering career through the graduate programme at BVT Engineering before progressing into a consulting engineer role working across a broad range of commercial and healthcare infrastructure projects throughout New Zealand. 
+    
+    The role involved designing and analysing mechanical components and restraint systems for non-structural building elements, alongside construction monitoring, technical coordination, and client communication within fast-paced commercial construction environments. Projects ranged from hospitals and logistics facilities to heritage redevelopments and large-scale retail developments, including Grey Base Hospital, MOVE Logistics, The Arts Centre Te Matatiki Toi Ora, and New World Wānaka. 
+    
+    Working closely with architects, structural engineers, fire engineers, and contractors, I developed experience delivering technically compliant and commercially viable engineering solutions while coordinating projects from concept through to site execution. The position also provided extensive exposure to construction-phase problem solving, responding to technical queries, and translating complex engineering concepts for both technical and non-technical stakeholders. Alongside project delivery, I also contributed to internal process development by mentoring a team of final-year engineering students on a technical project aimed at improving BVT’s automation workflows.`,
+  
+    images: [
+      {
+        id: '9-1',
+        src: '/images/BVT/Monitoring.jpeg',
+        alt: '3D Scanning of construction sites',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '9-2',
+        src: '/images/BVT/Axis_VM.jpeg',
+        alt: 'Example of Axis VM FEM software',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '9-3',
+        src: '/images/BVT/Roof.jpeg',
+        alt: 'Inspection of roof safety equipment',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '8-4',
+        src: '/images/BVT/Standard_verification.png',
+        alt: 'Example of verification form for a mechanical project',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '8-5',
+        src: '/images/BVT/producer_statement.png',
+        alt: 'Example of verification producer statement form for a mechanical project',
         aspectRatio: 'landscape',
       },
     ],
