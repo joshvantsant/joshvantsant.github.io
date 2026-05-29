@@ -471,15 +471,63 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
         aspectRatio: 'landscape',
       },
       {
-        id: '8-4',
+        id: '9-4',
         src: '/images/BVT/Standard_verification.png',
         alt: 'Example of verification form for a mechanical project',
         aspectRatio: 'landscape',
       },
       {
-        id: '8-5',
+        id: '9-5',
         src: '/images/BVT/producer_statement.png',
         alt: 'Example of verification producer statement form for a mechanical project',
+        aspectRatio: 'landscape',
+      },
+    ],
+  },
+
+  // ── 10. MEDICAL DEVICE PROTOTYPING ────────────────────────────────────────────
+  {
+    id: '10',
+    title: 'Medical Device Prototyping',
+    category: 'project',
+    year: 'Master',
+    slug: 'medical-device-prototyping',
+    coverImage: '/images/medical_device/annotated.png',
+    client: 'TU Delft',
+    location: 'Delft, Netherlands',
+    skills: [
+      'Medical device design',
+      'CAD (SolidWorks)',
+      'Vibration & harmonic analysis',
+      'Prototype fabrication',
+      'Experimental validation',
+      'Biomechanics',
+      'Sustainability assessment',
+    ],
+    description: `Total hip revisions are a growing surgical challenge with the conventional removal techniques such as using slap hammers and chisels risking excessive bone loss, blood loss, and fracture, particularly for well-fixated stems. Therefore, alongside 3 other master students, I completed a medical device prototyping project to design a minimally invasive alternative capable of removing a hip implant in under 15 minutes. The approach centred on impact vibration: a handheld, electrically powered device that transmits controlled vibrations through a force-clamping connector and connecting arm directly to the implant. The design process began with harmonic response analysis of the bone-implant interface to identify an optimal frequency range, which informed the final prototype geometry. Validation was carried out using a foam block with a fixed hip implant, comparing static and experimental performance against a conventional slap hammer. Results showed the device could successfully remove the implant with minimal impulse and comparable effectiveness, while addressing the limitations of current surgical technique.`,
+    images: [
+      {
+        id: '10-1',
+        src: '/images/medical_device/Render.jpg',
+        alt: 'SolidWorks CAD render of the handheld vibration removal device',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '10-2',
+        src: '/images/medical_device/annotated.png',  // ← swap in your filename
+        alt: 'Annotated side profile showing key components of the device',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '10-3',
+        src: '/images/medical_device/concepts.png',
+        alt: 'Early concept sketches showing three design variants (A, B, C)',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '10-4',
+        src: '/images/medical_device/Complete_device.png',
+        alt: 'Physical prototype of the completed device held in hand',
         aspectRatio: 'landscape',
       },
     ],
