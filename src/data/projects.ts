@@ -526,6 +526,12 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
       },
       {
         id: '10-4',
+        src: '/images/MDP/harmonic_analysis.png',
+        alt: 'Harmonic response analysis showing resonance peak at 32 Hz for medial and lateral bone-implant interface nodes',
+        aspectRatio: 'landscape',
+      },
+      {
+        id: '10-5',
         src: '/images/MDP/Complete_device.png',
         alt: 'Physical prototype of the completed device held in hand',
         aspectRatio: 'landscape',
