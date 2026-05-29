@@ -306,7 +306,7 @@ A custom PCB was designed and fabricated to integrate the sensors, actuators, an
       },
       {
         id: '3-4',
-        src: '/images/PCB for audio amplifier.jpg',
+        src: '/images/PCB.png',
         alt: 'Custom PCB schematic for robot electronics',
         aspectRatio: 'landscape',
       },
