@@ -492,7 +492,7 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
     category: 'project',
     year: 'Master',
     slug: 'medical-device-prototyping',
-    coverImage: '/images/medical_device/annotated.png',
+    coverImage: '/images/MDP/annotated.png',
     client: 'TU Delft',
     location: 'Delft, Netherlands',
     skills: [
@@ -508,25 +508,25 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
     images: [
       {
         id: '10-1',
-        src: '/images/medical_device/Render.jpg',
+        src: '/images/MDP/Render.jpg',
         alt: 'SolidWorks CAD render of the handheld vibration removal device',
         aspectRatio: 'landscape',
       },
       {
         id: '10-2',
-        src: '/images/medical_device/annotated.png',  // ← swap in your filename
+        src: '/images/MDP/annotated.png',  // ← swap in your filename
         alt: 'Annotated side profile showing key components of the device',
         aspectRatio: 'landscape',
       },
       {
         id: '10-3',
-        src: '/images/medical_device/concepts.png',
+        src: '/images/MDP/concepts.png',
         alt: 'Early concept sketches showing three design variants (A, B, C)',
         aspectRatio: 'portrait',
       },
       {
         id: '10-4',
-        src: '/images/medical_device/Complete_device.png',
+        src: '/images/MDP/Complete_device.png',
         alt: 'Physical prototype of the completed device held in hand',
         aspectRatio: 'landscape',
       },
