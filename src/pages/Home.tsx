@@ -66,7 +66,7 @@ const stats = [
   { icon: GraduationCap, value: 'MSc in Mechanical Engineering', label: 'TU Delft' },
   { icon: Building2,     value: 'TU Delft',                      label: 'Research Engineer' },
   { icon: MapPin,        value: 'NZ → NL',                       label: 'Canterbury to Delft' },
-  { icon: Briefcase,     value: '5+',                            label: 'Projects & internships' },
+  { icon: Briefcase,     value: '5+',                            label: 'Years of Industry Experience' },
 ];
 
 // ─── Constants ────────────────────────────────────────────────────────────────
