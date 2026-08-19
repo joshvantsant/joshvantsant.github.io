@@ -58,8 +58,8 @@ The project followed a complete engineering workflow: candidate mechanism geomet
     category: 'research project',
     year: 'Master',
     slug: 'soft-space-gripper',
-    // TODO: Replace with an actual project photo
     coverImage: '/images/BioMorphicLab/SMA_overview.jpg',
+    heroVideo: '/images/BioMorphicLab/Vacuum_gripper.mp4',
     client: 'TU Delft',
     location: 'Delft, Netherlands',
     skills: [
