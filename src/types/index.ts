@@ -24,13 +24,18 @@ export interface ProjectImage {
   size?: 'small' | 'medium' | 'large'; 
 }
 
+export interface NarrativeBlock {
+  text: string;
+  image?: ProjectImage; // optional image shown right after this block of text
+}
+
 export interface Project {
   id: string;
   title: string;
   category: ProjectCategory;
   year: string;
   coverImage: string;
-  heroVideo?: string;
+  heroVideo?: string;   // Optional video is required
   images: ProjectImage[];
   description: string;
   client?: string;
@@ -38,7 +43,8 @@ export interface Project {
   location?: string;
   slug: string;
   skills?: string[];        
-  notes?: string;           
+  notes?: string;
+  narrative?: NarrativeBlock[]; // optional interspersed text+image body, used instead of the flat gallery
   link?: {                  
     label: string;
     url: string;
