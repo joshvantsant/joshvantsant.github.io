@@ -94,7 +94,7 @@ This project has provided extensive experience across the full research and deve
   // ── 11. Orcahand_build ────────────────────────────────────────────────────────
   {
     id: '11',
-    title: 'Mimic Orcahand',
+    title: 'ORCA Hand',
     category: 'personal project',
     year: '2026',
     slug: 'orcahand',
@@ -110,7 +110,7 @@ This project has provided extensive experience across the full research and deve
       'Robotics',
     ],
     notes: 'Build of opensource OrcaHand to showcase robotic assembly skills',
-    description: `OrcaHand is an open-source, 17-motor tendon-driven robotic hand developed by ETH Zürich's Soft Robotics Lab. I built a full unit from scratch to sharpen my hands-on robotic assembly skills and to get real experience with the platform ahead of my PhD application to the lab. The build covers daisy-chained Feetech servo wiring, 3D printed structural components, and silicone-moulded fingers and palm cast from custom moulds. Tendon routing and tensioning turned out to be the trickiest part, getting even, consistent pull across all 17 tendons without excess friction took a lot of iteration. Alongside the physical build I've been working through the orca_core driver stack, debugging motor ID collisions, current-limit logic, and calibration scripts to get the hand fully operational.`,
+    description: `ORCA Hand is an open-source, 17-motor tendon-driven robotic hand developed by ETH Zürich's Soft Robotics Lab. I built a full unit from scratch to sharpen my hands-on robotic assembly skills and to get real experience with the platform ahead of my PhD application to the lab. The build covers daisy-chained Feetech servo wiring, 3D printed structural components, and silicone-moulded fingers and palm cast from custom moulds. Tendon routing and tensioning turned out to be the trickiest part, getting even, consistent pull across all 17 tendons without excess friction took a lot of iteration. Alongside the physical build I've been working through the orca_core driver stack, debugging motor ID collisions, current-limit logic, and calibration scripts to get the hand fully operational.`,
     link: {
       label: 'OrcaHand',
       url: 'https://www.orcahand.com',
