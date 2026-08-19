@@ -129,7 +129,48 @@ export default function ProjectDetail() {
 
         {/* GALLERY */}
         <section className="py-12 md:py-16">
-          {galleryLayout === 'grid' ? (
+          {project.narrative ? (
+            <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-10 md:space-y-14">
+              {project.narrative.map((block, index) => (
+                <ScrollReveal key={index} delay={index * 0.1}>
+                  <div className="space-y-6">
+                    <p className="text-lg font-light leading-relaxed">{block.text}</p>
+                    {block.image && (
+                      <div
+                        className="overflow-hidden rounded-xl cursor-pointer"
+                        onClick={() =>
+                          openLightbox(
+                            project.narrative!
+                              .filter((b) => b.image)
+                              .findIndex((b) => b.image?.id === block.image!.id)
+                          )
+                        }
+                      >
+                        {isVideoSrc(block.image.src) ? (
+                          <video
+                            src={block.image.src}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="auto"
+                            className="w-full object-cover"
+                          />
+                        ) : (
+                          <img
+                            src={block.image.src}
+                            alt={block.image.alt}
+                            className="w-full object-cover"
+                            loading="lazy"
+                          />
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          ) : galleryLayout === 'grid' ? (
             <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
               {project.images.map((image, index) => (
                 <ScrollReveal key={image.id} delay={index * 0.1}>
@@ -140,12 +181,24 @@ export default function ProjectDetail() {
                     )}
                     onClick={() => openLightbox(index)}
                   >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
+                    {isVideoSrc(image.src) ? (
+                      <video
+                        src={image.src}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                 </ScrollReveal>
               ))}
@@ -155,28 +208,41 @@ export default function ProjectDetail() {
               {project.images.map((image, index) => (
                 <ScrollReveal key={image.id} delay={index * 0.1}>
                   <div
-                    className={cn(
-                      'px-6 lg:px-8 cursor-pointer',
-                      imageSizeClass(image.size)
-                    )}
+                    className={cn('px-6 lg:px-8 cursor-pointer', imageSizeClass(image.size))}
                     onClick={() => openLightbox(index)}
                   >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full object-cover rounded-xl"
-                      loading="lazy"
-                    />
+                    {isVideoSrc(image.src) ? (
+                      <video
+                        src={image.src}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="w-full object-cover rounded-xl"
+                      />
+                    ) : (
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full object-cover rounded-xl"
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                 </ScrollReveal>
               ))}
             </div>
           )}
         </section>
-
+        
         {/* LIGHTBOX */}
         <Lightbox
-          images={project.images}
+          images={
+            project.narrative
+              ? project.narrative.filter((b) => b.image).map((b) => b.image!)
+              : project.images
+          }
           currentIndex={currentImageIndex}
           isOpen={lightboxOpen}
           onClose={closeLightbox}
