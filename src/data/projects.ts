@@ -99,6 +99,7 @@ This project has provided extensive experience across the full research and deve
     year: '2026',
     slug: 'orcahand',
     coverImage: '/images/Orca/Orca_mould.jpeg',
+    heroVideo: '/images/Orca/Orca_assembly.mp4',
     client: 'Personal Project',
     location: 'Delft, Netherlands',
     skills: [
@@ -111,8 +112,8 @@ This project has provided extensive experience across the full research and deve
     notes: 'Build of opensource OrcaHand to showcase robotic assembly skills',
     description: `OrcaHand is an open-source, 17-motor tendon-driven robotic hand developed by ETH Zürich's Soft Robotics Lab. I built a full unit from scratch to sharpen my hands-on robotic assembly skills and to get real experience with the platform ahead of my PhD application to the lab. The build covers daisy-chained Feetech servo wiring, 3D printed structural components, and silicone-moulded fingers and palm cast from custom moulds. Tendon routing and tensioning turned out to be the trickiest part, getting even, consistent pull across all 17 tendons without excess friction took a lot of iteration. Alongside the physical build I've been working through the orca_core driver stack, debugging motor ID collisions, current-limit logic, and calibration scripts to get the hand fully operational.`,
     link: {
-      label: 'Flexous Mechanisms',
-      url: 'https://flexous.com',
+      label: 'OrcaHand',
+      url: 'https://www.orcahand.com',
     },
     images: [
       {
@@ -129,9 +130,9 @@ This project has provided extensive experience across the full research and deve
       },
       {
         id: '11-3',
-        src: '/images/Orca/Orca_assembly.mp4',
-        alt: 'Video of Orca hand assembly and tensioning',
-        aspectRatio: 'landscape',
+        src: '/images/Orca/Orca_pose.jpeg',
+        alt: 'OrcaHand pose',
+        aspectRatio: 'portrait',
       },
     ],
   },
