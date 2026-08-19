@@ -6,9 +6,11 @@
 export type ProjectCategory =
   | 'Master thesis'
   | 'internship'
-  | 'student project'
   | 'research project'
   | 'master project'
+  | 'bachelor project'
+  | 'personal project'
+  | 'industry'
   | 'Biomechatronics / Medical Device Design'; 
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
@@ -19,7 +21,7 @@ export interface ProjectImage {
   alt: string;
   aspectRatio: AspectRatio;
   caption?: string;
-  size?: 'small' | 'medium' | 'large'; // ✅ add this line
+  size?: 'small' | 'medium' | 'large'; 
 }
 
 export interface Project {
@@ -28,19 +30,20 @@ export interface Project {
   category: ProjectCategory;
   year: string;
   coverImage: string;
+  heroVideo?: string;
   images: ProjectImage[];
   description: string;
   client?: string;
   camera?: string;
   location?: string;
   slug: string;
-  skills?: string[];        // ✅ add this
-  notes?: string;           // ✅ add this
-  link?: {                  // ✅ add this
+  skills?: string[];        
+  notes?: string;           
+  link?: {                  
     label: string;
     url: string;
   };
-  galleryLayout?: 'stacked' | 'grid'; // ✅ add this (used in ProjectDetail)
+  galleryLayout?: 'stacked' | 'grid'; 
 }
 
 export interface PhotographerInfo {
