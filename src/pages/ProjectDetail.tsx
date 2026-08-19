@@ -2,6 +2,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { isVideoSrc } from '@/lib/utils';
 import { getProjectBySlug } from '@/data/projects';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -57,13 +58,26 @@ export default function ProjectDetail() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img
-            src={project.coverImage}
-            alt={project.title}
-            className="w-full h-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
+          {project.heroVideo ? (
+            <video
+              src={project.heroVideo}
+              poster={project.coverImage}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <img
+              src={project.coverImage}
+              alt={project.title}
+              className="w-full h-full object-cover"
+              loading="eager"
+              fetchPriority="high"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
         </motion.div>
 
