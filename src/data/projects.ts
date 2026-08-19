@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Compliant Chronograph Mechanism',
-    category: 'thesis',
+    category: 'Master thesis',
     year: 'Master',
     slug: 'compliant-chronograph',
     coverImage: '/images/compliant_thesis/Flexous.png',
@@ -95,7 +95,7 @@ This project has provided extensive experience across the full research and deve
   {
     id: '11',
     title: 'Mimic Orcahand',
-    category: 'hobbies',
+    category: 'personal project',
     year: '2026',
     slug: 'orcahand',
     coverImage: '/images/Orca/Orca_mould.jpeg',
@@ -203,7 +203,7 @@ This project has provided extensive experience across the full research and deve
   {
     id: '6',
     title: 'BioMechatronics Design Project',
-    category: 'Biomechatronics / Medical Device Design',
+    category: 'master project',
     year: 'Master',
     slug: 'master-design-project-biomechatronics',
     
@@ -315,7 +315,7 @@ The final concept proposed a wearable insole system incorporating pressure senso
   {
     id: '3',
     title: 'RoboCup — Autonomous Arena Robot',
-    category: 'student project',
+    category: 'bachelor project',
     year: 'Bachelor',
     slug: 'robocup',
     coverImage: '/images/RoboCup.jpg',
@@ -536,7 +536,7 @@ Alongside this I manufactured custom wire racking products: cutting heavy-gauge 
   {
     id: '10',
     title: 'Medical Device Prototyping',
-    category: 'project',
+    category: 'master project',
     year: 'Master',
     slug: 'medical-device-prototyping',
     coverImage: '/images/MDP/annotated.png',
