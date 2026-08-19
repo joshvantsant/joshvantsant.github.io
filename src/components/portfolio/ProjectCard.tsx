@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import type { Project } from '@/types';
 import { cn } from '@/lib/utils';
+import { isVideoSrc } from '@/lib/utils';
 
 interface ProjectCardProps {
   project: Project;
@@ -29,7 +30,22 @@ export function ProjectCard({
   index = 0,
 }: ProjectCardProps) {
   const [isLoaded, setIsLoaded] = React.useState(false);
+  const videoRef = React.useRef<HTMLVideoElement>(null);
   const ratio = aspectRatio || 'landscape';
+
+  const hasHoverVideo = !!project.heroVideo; 
+
+  const handleMouseEnter = () => { 
+    videoRef.current?.play().catch(() => {});
+  };
+
+  const handleMouseLeave = () => { 
+    const v = videoRef.current;
+    if (v) {
+      v.pause();
+      v.currentTime = 0;
+    }
+  };
 
   const aspectRatioClasses = {
     portrait: 'aspect-[3/4]',
@@ -56,6 +72,8 @@ export function ProjectCard({
       <Link
         to={`/project/${project.slug}`}
         className="group block relative overflow-hidden rounded-sm"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         {/* ── Image container ─────────────────────────────────────────────── */}
         <div className={cn('relative overflow-hidden bg-muted', aspectRatioClasses[ratio])}>
@@ -70,11 +88,24 @@ export function ProjectCard({
               'absolute inset-0 w-full h-full object-cover transition-all duration-700',
               isLoaded ? 'opacity-100' : 'opacity-0',
               'group-hover:scale-110',
+              hasHoverVideo && 'group-hover:opacity-0',
             )}
             loading={index < 6 ? 'eager' : 'lazy'}
             decoding="async"
             onLoad={() => setIsLoaded(true)}
           />
+
+          {hasHoverVideo && (   
+            <video
+              ref={videoRef}
+              src={project.heroVideo}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            />
+          )}
 
           {/* ── Hover overlay ──────────────────────────────────────────────── */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
