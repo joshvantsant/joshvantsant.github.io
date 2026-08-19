@@ -98,7 +98,7 @@ This project has provided extensive experience across the full research and deve
     category: 'personal project',
     year: '2026',
     slug: 'orcahand',
-    coverImage: '/images/Orca/Orca_assembly.mp4',
+    coverImage: '/images/Orca/Orca_mould.jpeg',
     heroVideo: '/images/Orca/Orca_assembly.mp4',
     client: 'Personal Project',
     location: 'Delft, Netherlands',
