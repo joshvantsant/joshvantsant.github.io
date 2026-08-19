@@ -91,6 +91,56 @@ This project has provided extensive experience across the full research and deve
     ],
   },
 
+  // ── 11. Orcahand_build ────────────────────────────────────────────────────────
+  {
+    id: '11',
+    title: 'Mimic Orcahand',
+    category: 'hobbies',
+    year: '2026',
+    slug: 'orcahand',
+    coverImage: '/images/Orca/Orca_mould.jpeg',
+    client: 'Personal Project',
+    location: 'Delft, Netherlands',
+    skills: [
+      'Robotic Assembly',
+      'Fusion 360',
+      'Additive manufacturing',
+      'Silicon moulding',
+      'Robotics',
+    ],
+    notes: 'Build of opensource OrcaHand to showcase robotic assembly skills',
+    description: `For my master thesis I worked with Flexous Mechanisms, a company specialising in compliant mechanism design for precision applications. The project focused on designing and optimising a compliant horizontal clutch and braking system for a mechanical watch chronograph.
+
+Compliant mechanisms achieve motion through controlled elastic deformation of flexible members rather than traditional rigid joints and bearings. This makes them ideal for precision instruments where backlash, friction, and lubrication are critical concerns.
+
+The project followed a complete engineering workflow: candidate mechanism geometries were developed in SolidWorks based on functional requirements, then structurally and kinematically analysed using ANSYS APDL and MATLAB to iterate on geometry and meet stiffness and deflection targets. Physical prototypes were produced via 3D printing and mechanically tested to verify real-world behaviour against simulation predictions.`,
+    link: {
+      label: 'Flexous Mechanisms',
+      url: 'https://flexous.com',
+    },
+    images: [
+      {
+        id: '11-1',
+        src: '/images/Orca/Orca_motors.jpeg',
+        alt: 'Daisy chained motors for OrcaHand',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '11-2',
+        src: '/images/Orca/Orca_mould.jpeg',
+        alt: 'Layout of OrcaHand alongside silicon moulded fingers and palm',
+        aspectRatio: 'portrait',
+      },
+      {
+        id: '11-3',
+        src: '/images/Orca/Orca_assembly.mp4',
+        alt: 'Video of Orca hand assembly and tensioning',
+        aspectRatio: 'landscape',
+      },
+    ],
+  },
+
+
   // ── 5. JIP (JOINT INDUSTRY PROJECT) ─────────────────────────────────────────
   {
     id: '5',
