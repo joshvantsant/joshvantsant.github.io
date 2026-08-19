@@ -199,7 +199,7 @@ This project has provided extensive experience across the full research and deve
     ],
   },
 
-  // ── 12. Microspine rock gripper project ────────────────────────────────────────────────────────
+  // ── 12. Microspine gripper project ────────────────────────────────────────────
   {
     id: '12',
     title: 'Soft Robotic Microspine Gripper',
@@ -208,60 +208,79 @@ This project has provided extensive experience across the full research and deve
     slug: 'microspine_gripper',
     coverImage: '/images/BioMorphicLab/microspine_hold.jpeg',
     heroVideo: '/images/BioMorphicLab/microspine_video.mp4',
-    client: 'research project',
+    client: 'TU Delft · BioMorphic Intelligence Lab',
     location: 'Delft, Netherlands',
     skills: [
       'Compliant Mechanisms',
       'Fusion 360',
       'Additive manufacturing',
-      'Silicon moulding',
+      'Silicone moulding',
       'Robotics',
       'Microspines',
     ],
-    notes: 'Build of microspine gripper for picking up an assembly of space rocks',
-    description: `OrcaHand is an open-source, 17-motor tendon-driven robotic hand developed by ETH Zürich's Soft Robotics Lab. I built a full unit from scratch to sharpen my hands-on robotic assembly skills and to get real experience with the platform ahead of my PhD application to the lab. The build covers daisy-chained Feetech servo wiring, 3D printed structural components, and silicone-moulded fingers and palm cast from custom moulds. Tendon routing and tensioning turned out to be the trickiest part, getting even, consistent pull across all 17 tendons without excess friction took a lot of iteration. Alongside the physical build I've been working through the orca_core driver stack, debugging motor ID collisions, current-limit logic, and calibration scripts to get the hand fully operational.`,
+    notes: 'Soft robotic gripper for interplanetary rock sampling, integrating microspine structures into a compliant 3D printed architecture. First-author publication in preparation.',
+    description: `I'm developing a soft robotic gripper for interplanetary rock sampling at TU Delft's BioMorphic Intelligence Lab, and I'll be first author on the resulting publication. The gripper combines a compliant, 3D printed body with integrated microspine structures so it can secure irregular rock geometries without needing a precise pre-planned grasp.`,
     link: {
-      label: 'Microspine_publication',
-      url: 'https://www.tudelft.nl/en/ai/biomorphic-intelligence-lab#c864978',
+      label: 'Publication (in preparation)',
+      url: '#',
     },
-    images: [
+    narrative: [
       {
-        id: '12-1',
-        src: '/images/BioMorphicLab/microspine_closeup.jpeg',
-        alt: 'Daisy chained motors for OrcaHand',
-        aspectRatio: 'portrait',
+        text: `Real rock surfaces on extraterrestrial terrain are irregular and unpredictable, and mission time for careful positioning is limited. Rather than relying on a rigid gripper with high clamping force, this design uses arrays of small hooked microspines that mechanically engage a rock's surface texture, distributed across a body that can passively conform to whatever shape it meets.`,
+        image: {
+          id: '12-1',
+          src: '/images/BioMorphicLab/microspine_closeup.jpeg',
+          alt: 'Close-up of the microspine hook array engaging a rock surface',
+          aspectRatio: 'portrait',
+        },
       },
       {
-        id: '12-2',
-        src: '/images/BioMorphicLab/microspine_mould.jpeg',
-        alt: 'Layout of OrcaHand alongside silicon moulded fingers and palm',
-        aspectRatio: 'portrait',
+        text: `Getting the compliant body right meant testing several 3D printing materials before landing on one with the right balance of flexibility and durability, stiff enough to hold its shape under load, soft enough to deform around irregular rock geometry without the microspines losing contact.`,
+        image: {
+          id: '12-5',
+          src: '/images/BioMorphicLab/microspine_print.jpeg',
+          alt: '3D printed compliant gripper structure in different candidate materials',
+          aspectRatio: 'portrait',
+        },
       },
       {
-        id: '12-3',
-        src: '/images/BioMorphicLab/microspine_full.jpeg',
-        alt: 'OrcaHand pose',
-        aspectRatio: 'portrait',
+        text: `The compliant sections of the gripper are silicone moulded, cast from custom 3D printed moulds. This gives the fine control over local stiffness that the printed material alone couldn't reach, letting different areas of the gripper flex by different amounts depending on where they sit relative to the microspine arrays.`,
+        image: {
+          id: '12-2',
+          src: '/images/BioMorphicLab/microspine_mould.jpeg',
+          alt: 'Silicone moulding process for the compliant gripper structure',
+          aspectRatio: 'portrait',
+        },
       },
       {
-        id: '12-4',
-        src: '/images/BioMorphicLab/microspine_assembly.jpeg',
-        alt: 'OrcaHand pose',
-        aspectRatio: 'portrait',
+        text: `Integrating the microspines into the compliant structure was the fiddliest part of the build, each spine array needed to sit at the right depth and angle to engage on contact without tearing through the silicone during repeated grasp cycles.`,
+        image: {
+          id: '12-4',
+          src: '/images/BioMorphicLab/microspine_assembly.jpeg',
+          alt: 'Assembling microspine arrays into the compliant gripper body',
+          aspectRatio: 'portrait',
+        },
       },
       {
-        id: '12-5',
-        src: '/images/BioMorphicLab/microspine_print.jpeg',
-        alt: 'OrcaHand pose',
-        aspectRatio: 'portrait',
+        text: `The finished gripper brings the printed frame, moulded compliant sections, and microspine arrays together into a single lightweight, mechanically simple mechanism, an important constraint for anything destined for a space payload.`,
+        image: {
+          id: '12-3',
+          src: '/images/BioMorphicLab/microspine_full.jpeg',
+          alt: 'Fully assembled soft robotic microspine gripper',
+          aspectRatio: 'portrait',
+        },
       },
       {
-        id: '12-6',
-        src: '/images/BioMorphicLab/microspine_hold_close.jpeg',
-        alt: 'OrcaHand pose',
-        aspectRatio: 'portrait',
+        text: `Testing across a range of rock shapes and sizes has been the main way I've validated the design, checking that the gripper holds securely on first contact without needing repositioning, and that grip strength holds up over repeated cycles.`,
+        image: {
+          id: '12-6',
+          src: '/images/BioMorphicLab/microspine_hold_close.jpeg',
+          alt: 'Close-up of the gripper holding a rock sample during testing',
+          aspectRatio: 'portrait',
+        },
       },
     ],
+    images: [], // kept for type compatibility; narrative array is used for this project's gallery instead
   },
 
   // ── 6. MASTER BIOMECHATRONICS DESIGN PROJECT ─────────────────────────────────────────────────
