@@ -109,11 +109,7 @@ This project has provided extensive experience across the full research and deve
       'Robotics',
     ],
     notes: 'Build of opensource OrcaHand to showcase robotic assembly skills',
-    description: `For my master thesis I worked with Flexous Mechanisms, a company specialising in compliant mechanism design for precision applications. The project focused on designing and optimising a compliant horizontal clutch and braking system for a mechanical watch chronograph.
-
-Compliant mechanisms achieve motion through controlled elastic deformation of flexible members rather than traditional rigid joints and bearings. This makes them ideal for precision instruments where backlash, friction, and lubrication are critical concerns.
-
-The project followed a complete engineering workflow: candidate mechanism geometries were developed in SolidWorks based on functional requirements, then structurally and kinematically analysed using ANSYS APDL and MATLAB to iterate on geometry and meet stiffness and deflection targets. Physical prototypes were produced via 3D printing and mechanically tested to verify real-world behaviour against simulation predictions.`,
+    description: `OrcaHand is an open-source, 17-motor tendon-driven robotic hand developed by ETH Zürich's Soft Robotics Lab. I built a full unit from scratch to sharpen my hands-on robotic assembly skills and to get real experience with the platform ahead of my PhD application to the lab. The build covers daisy-chained Feetech servo wiring, 3D printed structural components, and silicone-moulded fingers and palm cast from custom moulds. Tendon routing and tensioning turned out to be the trickiest part, getting even, consistent pull across all 17 tendons without excess friction took a lot of iteration. Alongside the physical build I've been working through the orca_core driver stack, debugging motor ID collisions, current-limit logic, and calibration scripts to get the hand fully operational.`,
     link: {
       label: 'Flexous Mechanisms',
       url: 'https://flexous.com',
